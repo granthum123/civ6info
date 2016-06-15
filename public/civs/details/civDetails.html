@@ -1,0 +1,21 @@
+<script src="civDetails.js"></script>
+<div class="container" ng-controller="civDetailsCtrl">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Civilization</th>
+				<th>Unique Ability</th>
+				<th>Unique Unit (1)</th>
+				<th>Unique Unit (2)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+                <td>{{civ.name}}</td> 
+                <td>{{civ.ability}}</td>
+                <td>{{civ.unit1}}</td>
+				<td>{{civ.unit2}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
