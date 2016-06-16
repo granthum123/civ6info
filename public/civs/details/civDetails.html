@@ -1,6 +1,5 @@
-<script src="civDetails.js"></script>
 <div class="container" ng-controller="civDetailsCtrl">
-	<table class="table">
+	<table class="table table-condensed table-responsive">
 		<thead>
 			<tr>
 				<th>Civilization</th>
@@ -11,10 +10,10 @@
 		</thead>
 		<tbody>
 			<tr>
-                <td>{{civ.name}}</td> 
-                <td>{{civ.ability}}</td>
-                <td>{{civ.unit1}}</td>
-				<td>{{civ.unit2}}</td>
+                <td>{{civDetail.name}}</td> 
+                <td>{{civDetail.ability}}</td>
+                <td>{{civDetail.unit1}}</td>
+				<td>{{civDetail.unit2}}</td>
 			</tr>
 		</tbody>
 	</table>

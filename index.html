@@ -7,29 +7,51 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	
+	<!-- Custom Styles -->
+	<link rel= "stylesheet" href="styles/styles.css">
+	
+	<!-- Custom JQuery 
+	<script src="styles/styles.js"></script>-->
+	
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/angular-route/angular-route.js"></script>
 	<script src="public/app.js"></script>
 	<script src="public/civs/civs.js"></script>
+	<script src="public/civs/details/civDetails.js"></script>
+
+	
 	
 	<title>Civilization 6 Information</title>
 </head>
 <body>
 	<!--Navbar-->
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
 		<div class = "container-fluid">
 			<div class="navbar-header">
 				<a href = "/#/" class = "navbar-brand">CIV6INFO</a>
 			</div>
 			<div>
 				<ul class="nav navbar-nav">
-					<li class = "active"><a href = "#/civs">Civilizations</a></li>
-					<li><a href = "#/tiles">Tiles</a></li>
-					<li><a href = "#/strategy">Strategy</a></li>
-				</ul>
+					<li class = "active">
+					    <a href = "#/civs"><span class="glyphicon glyphicon-tower"></span>     Civilizations</a>
+					</li>
+					<li>
+						<a href = "#/tiles"><span class="glyphicon glyphicon-globe"></span>     Tiles</a>
+					</li>
+					<li>
+						<a href = "#/strategy"><span class="glyphicon glyphicon-screenshot"></span>     Strategy</a>
+					</li>
+					<li>
+						<a href = "#/news"><span class = "glyphicon glyphicon-time"></span>     What's New</a>
+					</li>
+				</ul><!-- END NAVBAR-NAV ICONS-->
+				<form class="navbar-form pull-right">
+					<input type="text" class="form-control" placeholder="Search This Site"/>
+					<button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-search"></span></button>
+				</form>
 			</div>
 		</div>
-	</nav>
+	</nav><!-- END NAVBAR -->
 	<ng-view></ng-view>
 	</body>
 </body>

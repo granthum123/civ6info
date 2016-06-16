@@ -1,5 +1,5 @@
-<div class="container" ng-controller="civsCtrl">
-	<table class="table">
+<div class="container" ng-controller="civsCtrl"><!-- Trying to center table/coloring scheme-->
+	<table class="table table-condensed table-responsive">
 		<thead>
 			<tr>
 				<th>Civilization</th>
@@ -9,7 +9,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="civ in civs">
+			<tr ng-repeat="civ in civlist">
                 <td><a href = "/#/civs/{{civ.name}}" >{{civ.name}}</a></td> 
                 <td>{{civ.ability}}</td>
                 <td>{{civ.unit1}}</td>

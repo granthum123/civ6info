@@ -5,19 +5,22 @@ var myApp = angular.module('myApp', ['ngRoute', 'appControllers']);
 myApp.config(['$routeProvider', function($routeProvider){
       $routeProvider
           .when('/', {
-              templateUrl:'public/home.html'
+            templateUrl:'public/home.html'
           })
           .when('/civs', {
-              templateUrl:'public/civs/civs.html'
+            templateUrl:'public/civs/civs.html'
           })
           .when('/strategy',{
-              templateUrl:'public/strategy.html'
+            templateUrl:'public/strategy.html'
           })
           .when('/tiles',{
-              templateUrl:'public/tiles.html'
+            templateUrl:'public/tiles.html'
           })
 		  .when('/civs/:name', {
-           		templateUrl:'public/civs/details/civDetails.html'
+           	templateUrl:'public/civs/details/civDetails.html'
+          })
+          .when('/news', {
+            templateUrl:'public/news.html'
           })
           .otherwise({ redirectTo:'/'})
 }]);
