@@ -16,11 +16,14 @@ myApp.config(['$routeProvider', function($routeProvider){
           .when('/tiles',{
             templateUrl:'public/tiles.html'
           })
-		  .when('/civs/:name', {
+		      .when('/civs/:name', {
            	templateUrl:'public/civs/details/civDetails.html'
           })
           .when('/news', {
             templateUrl:'public/news.html'
+          })
+          .when('/units', {
+            templateUrl:'public/units.html'
           })
           .otherwise({ redirectTo:'/'})
 }]);
