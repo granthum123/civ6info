@@ -1,11 +1,15 @@
-angular.module('appControllers').controller('civDetailsCtrl', ['$scope', '$http', function($scope, $http){
+angular.module('appControllers').controller('civDetailsCtrl', ['$scope', '$http', "$routeParams", function($scope, $http, $routeParams){
 	//Get URL Param (replace later with scoped civname)
-	var param = location.hash;
-	var index = param.lastIndexOf('/');
-	var civName = param.substring(index+1);
-	$http.get('https://civinfoapp-granthum.c9users.io:8081/api/civs/' + civName).success(function(response){
-		console.log(civName);
+	$http.get('https://api-civ6.rhcloud.com/civs/' + $routeParams.name).success(function(response){
+		console.log(response);
 		console.log("I got the data I requested");
-		$scope.civDetail = response.characters;
+		$scope.civ = response.response[0];
+		if ($scope.civ.leader_image === "")
+			$scope.civ.leader_image = "http://cliparts.co/cliparts/yTk/Ke9/yTkKe9ayc.jpg";
+				
+		$http.get('https://api-civ6.rhcloud.com/civs/' + $scope.civ.id + "/items").success(function(response2){
+			console.log(response2);
+			$scope.items = response2.response;
+		})
 	})
 }]);

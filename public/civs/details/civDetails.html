@@ -1,20 +1,47 @@
-<div class="container" ng-controller="civDetailsCtrl">
-	<table class="table table-condensed table-responsive">
-		<thead>
-			<tr>
-				<th>Civilization</th>
-				<th>Unique Ability</th>
-				<th>Unique Unit (1)</th>
-				<th>Unique Unit (2)</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-                <td>{{civDetail.name}}</td> 
-                <td>{{civDetail.ability}}</td>
-                <td>{{civDetail.unit1}}</td>
-				<td>{{civDetail.unit2}}</td>
-			</tr>
-		</tbody>
-	</table>
+<div class="container-fluid" ng-controller="civDetailsCtrl">
+	<div class="col-md-3" id="sidebar">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div ng-include="'/public/civs/civsList.html'"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-9" id="sidebar">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-3">
+						<img class="img-responsive" src={{civ.leader_image}} alt={{civ.leader}} width="300" height="300">
+					</div>
+					<div class="col-md-6">
+						<h2>{{civ.name}}</h2>
+						<h4>Leader: {{civ.leader}}</h4>
+						<h4>Ability: {{civ.ability_name}}</h4>
+						<p>{{civ.ability_info}}</p>
+					</div>
+				</div>
+				<br>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<table class="table table-condensed table-responsive">
+							<thead>
+								<tr>
+									<th>Unique Item</th>
+									<th>Type</th>
+									<th>Info</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="item in items">
+									<td><a href="/#/units/{{item.name}}">{{item.name}}</a></td>
+									<td>{{item.type}}</td>
+									<td>{{item.info}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

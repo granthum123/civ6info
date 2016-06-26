@@ -3,17 +3,17 @@
 		<thead>
 			<tr>
 				<th>Civilization</th>
-				<th>Unique Ability</th>
-				<th>Unique Unit (1)</th>
-				<th>Unique Unit (2)</th>
+				<th>Leader</th>
+				<th>Ability</th>
+				<th>Info</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr ng-repeat="civ in civlist">
                 <td><a href = "/#/civs/{{civ.name}}" >{{civ.name}}</a></td> 
-                <td>{{civ.ability}}</td>
-                <td>{{civ.unit1}}</td>
-				<td>{{civ.unit2}}</td>
+                <td>{{civ.leader}}</td>
+                <td>{{civ.ability_name}}</td>
+				<td>{{civ.ability_info}}</td>
 			</tr>
 		</tbody>
 	</table>

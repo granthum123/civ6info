@@ -1,0 +1,11 @@
+<div class="container-fluid" ng-controller="civsCtrl">
+    <h4>Civilizations</h4>
+    <table class="table table-condensed table-responsive">
+        <tbody>
+            <tr ng-repeat="civ in civlist">
+                <td><a href="/#/civs/{{civ.name}}">{{civ.name}}</a></td>
+                <td>{{civ.leader}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,32 +1,6 @@
-#view {
-    background: #A2AB58; /* fallback for old browsers */
-}
-#background {
-    background-color:#404040;
-}
-.table th, .table td { 
-    border-top: none;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 0;
-    padding: 0;
-}
-.table th {
-     color:#F3FAB6;
-}
-.html:hover {
-    cursor: default;
-}
+
 #container:hover {
     cursor: default;
-}
-h2 {
-    color:#404040;
-    text-align:center;
-}
-p {
-    text-align:center;
-    color:#F3FAB6;
 }
 #navbar-element {
     color:#F3FAB6;
@@ -34,14 +8,7 @@ p {
 #brand {
     color:#F3FAB6;
 }
-td>a {
-    color: #fb3f00;
-    text-decoration:none;
-}
-div .row {
-    text-shadow: 0 1px 0 #e0e0e0;
-    border-color: #e0e0e0;
-}
+
 div .well{
     border: 5px inset #191919;
 }
