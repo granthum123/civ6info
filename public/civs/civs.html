@@ -1,20 +1,26 @@
-<div class="container" ng-controller="civsCtrl"><!-- Trying to center table/coloring scheme-->
-	<table class="table table-condensed table-responsive">
-		<thead>
-			<tr>
-				<th>Civilization</th>
-				<th>Leader</th>
-				<th>Ability</th>
-				<th>Info</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat="civ in civlist">
-                <td><a href = "/#/civs/{{civ.name}}" >{{civ.name}}</a></td> 
-                <td>{{civ.leader}}</td>
-                <td>{{civ.ability_name}}</td>
-				<td>{{civ.ability_info}}</td>
-			</tr>
-		</tbody>
-	</table>
+<div class="container" ng-controller="civsCtrl">
+	<!-- Trying to center table/coloring scheme-->
+	<div class="panel panel-primary">
+		<div class="panel-heading">Civilizations</div>
+		<div class="panel-body">
+			<table class="table table-condensed table-responsive">
+				<thead>
+					<tr>
+						<th>Civilization</th>
+						<th>Leader</th>
+						<th>Ability</th>
+						<th>Info</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="civ in civlist">
+						<td><a href="/#/civs/{{civ.name}}">{{civ.name}}</a></td>
+						<td>{{civ.leader}}</td>
+						<td>{{civ.ability_name}}</td>
+						<td>{{civ.ability_info}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 </div>

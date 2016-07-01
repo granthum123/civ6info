@@ -23,7 +23,16 @@ myApp.config(['$routeProvider', function($routeProvider){
             templateUrl:'public/news.html'
           })
           .when('/units', {
-            templateUrl:'public/units.html'
+            templateUrl:'public/units/units.html'
+          })
+          .when('/units/:name', {
+           	templateUrl:'public/units/unitDetails.html'
+          })
+          .when('/buildings', {
+           	templateUrl:'public/buildings/buildings.html'
+          })
+          .when('/districts', {
+           	templateUrl:'public/coming-soon.html'
           })
           .otherwise({ redirectTo:'/'})
 }]);

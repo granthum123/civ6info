@@ -21,26 +21,27 @@
 					</div>
 				</div>
 				<br>
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<table class="table table-condensed table-responsive">
-							<thead>
-								<tr>
-									<th>Unique Item</th>
-									<th>Type</th>
-									<th>Info</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr ng-repeat="item in items">
-									<td><a href="/#/units/{{item.name}}">{{item.name}}</a></td>
-									<td>{{item.type}}</td>
-									<td>{{item.info}}</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="" data-toggle="tab">Unique Items</a></li>
+					<li><a href="" data-toggle="tab">Strategy</a></li>
+				</ul>
+				<br>
+				<table class="table table-condensed table-responsive">
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Type</th>
+							<th>Info</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in items">
+							<td><a href="/#/units/{{item.name}}">{{item.name}}</a></td>
+							<td>{{item.type}}</td>
+							<td>{{item.info}}</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>

@@ -1,51 +1,79 @@
 <div class="container">
     <div>
         <div class="megatron">
-            
+
         </div>
     </div>
+    <!-- Square card -->
+    <style>
+        .demo-card-square.mdl-card {
+            
+        }
+        
+        .demo-card-square> .mdl-card__title {
+            color: #fff;
+        }
+        #CivCard {
+            width: 350px;
+            height: 450px;
+        }
+        #CivImage {
+            background: url('http://www.civfanatics.com/gallery/files/4/8/2/1/7/civ6-teddy_48198.jpg') top; 
+        }
+        #UnitCard {
+            width: 350px;
+            height: 350px;
+        }
+        #UnitImage {
+            background: url('http://www.pcgamesn.com/sites/default/files/civilization%206%20rough%20riders.jpg') top; 
+        }
+        #BuildingCard {
+            width: 350px;
+            height: 400px;
+        }
+        #BuildingImage {
+            background: url('http://www.pcgamesn.com/sites/default/files/civ%206%20film%20studio.jpg') top; 
+        }
+    </style>
     <div class="row">
         <div class="col-md-4">
-            <a href="#/tiles" style="color: #fb3f00;text-decoration:none;">
-                <div class="well" id ="view">
-                    <br/>
-                    <span class="glyphicon glyphicon-pawn" style="font-size:50px; color:#F3FAB6; display:block; text-align:center;"></span>
-                    <h2>Units</h2>
-                    <p>View all units and their special abilities.</p>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+            <div class="demo-card-square mdl-card mdl-shadow--2dp" id="CivCard">
+                <div class="mdl-card__title mdl-card--expand" id="CivImage">
+                    <h2 class="mdl-card__title-text">Civs</h2>
                 </div>
-            </a>
+                <div class="mdl-card__supporting-text">
+                    View all Civilizations and their unique items, leaders, and abilities.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#/civs">View Civs</a>
+                </div>
+            </div>
         </div>
         <div class="col-md-4">
-            <a href="#/civs" style="color: #fb3f00;text-decoration:none;">
-                <div class="well" id ="view">
-                    <br/>
-                    <span class="glyphicon glyphicon-tower" style="font-size:50px; color:#F3FAB6; display:block; text-align:center;"></span>
-                    <h2>Civilizations</h2>
-                    <p>View all civilizations and their uniquities.</p>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+            <div class="demo-card-square mdl-card mdl-shadow--2dp" id="UnitCard">
+                <div class="mdl-card__title mdl-card--expand" id="UnitImage">
+                    <h2 class="mdl-card__title-text">Units</h2>
                 </div>
-            </a>
+                <div class="mdl-card__supporting-text">
+                    View all Units and their unique stuff.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#/units">View Units</a>
+                </div>
+            </div>
         </div>
         <div class="col-md-4">
-            <a href="#/tiles" style="color: #fb3f00;text-decoration:none;">
-                <div class="well" id ="view">
-                    <br/>
-                    <span class="glyphicon glyphicon-globe" style="font-size:50px; color:#F3FAB6; display:block; text-align:center;"></span>
-                    <h2>Tiles</h2>
-                    <p>View all tiles and their possible improvements.</p>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+            <div class="demo-card-square mdl-card mdl-shadow--2dp" id="BuildingCard">
+                <div class="mdl-card__title mdl-card--expand" id="BuildingImage">
+                    <h2 class="mdl-card__title-text">Buildings</h2>
                 </div>
-            </a>
+                <div class="mdl-card__supporting-text">
+                    View all Civilizations and their unique items, leaders, and abilities.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#/buildings">View Buildings</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -1,4 +1,6 @@
-
+body {
+    background-image: url("../images/civ-large.jpg");
+}
 #container:hover {
     cursor: default;
 }

@@ -1,0 +1,18 @@
+<div class="container" ng-controller="unitsCtrl" style="background: #ffffff; height: 100%;">
+    <!-- Trying to center table/coloring scheme-->
+    <h3>Units</h3>
+    <table class="table table-condensed table-responsive">
+        <thead>
+            <tr>
+                <th>Unit</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="unit in units">
+                <td><a href="/#/units/{{unit.name}}">{{unit.name}}</a></td>
+                <td>{{unit.info}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

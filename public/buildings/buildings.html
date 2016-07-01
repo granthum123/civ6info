@@ -1,0 +1,22 @@
+<div class="container" ng-controller="buildingsCtrl">
+    <!-- Trying to center table/coloring scheme-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">Buildings</div>
+        <div class="panel-body">
+            <table class="table table-condensed table-responsive">
+                <thead>
+                    <tr>
+                        <th>Building</th>
+                        <th>Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="building in buildings">
+                        <td><a href="/#/buildings/{{building.name}}">{{building.name}}</a></td>
+                        <td>{{building.info}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
