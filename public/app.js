@@ -11,7 +11,7 @@ myApp.config(['$routeProvider', function($routeProvider){
             templateUrl:'public/civs/civs.html'
           })
           .when('/strategy',{
-            templateUrl:'public/strategy.html'
+            templateUrl:'public/strategies/strategy.html'
           })
           .when('/tiles',{
             templateUrl:'public/tiles.html'

@@ -1,16 +1,72 @@
 body {
     background-image: url("../images/civ-large.jpg");
 }
+
 #container:hover {
     cursor: default;
 }
+
 #navbar-element {
-    color:#F3FAB6;
-}
-#brand {
-    color:#F3FAB6;
+    color: #F3FAB6;
 }
 
-div .well{
+#brand {
+    color: #F3FAB6;
+}
+
+div .well {
     border: 5px inset #191919;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+}
+
+.navbar-nav li:hover {
+    background-color: rgba(64, 64, 64, .5);
+}
+
+a {
+    color: #FFCA28;
+}
+
+a:hover {
+    color: #FFCA28;
+}
+#yellowlink {
+   color: #FFCA28; 
+}
+
+th {
+    background-color: #388E3C;
+    color: white;
+}
+
+table th:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+table th:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+td,
+th {
+    border: none !important;
+}
+
+tr:nth-child(even) {
+    background-color: #4d4d4d
+}
+
+h4 {
+    color: white;
+}
+
+tbody,
+thead {
+    color: white;
 }

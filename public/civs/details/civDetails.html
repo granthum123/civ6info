@@ -1,13 +1,16 @@
 <div class="container-fluid" ng-controller="civDetailsCtrl">
 	<div class="col-md-3" id="sidebar">
-		<div class="panel panel-default">
-			<div class="panel-body">
+		<div class="panel panel-primary" style="background-color: #1976D2; border-color: #333333;">
+			<div class="panel-header" style="">
+				<h4 style="padding-left: 10px">Civilizations</h4>
+			</div>
+			<div class="panel-body" style="background: #424242;">
 				<div ng-include="'/public/civs/civsList.html'"></div>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-9" id="sidebar">
-		<div class="panel panel-default">
+	<div class="col-md-9" id="sidebar" style="background-color: rgba(64, 64, 64, .97); padding: 20px;">
+		<div class="panel panel-default" style="background: #424242; border-color: #333333">
 			<div class="panel-body">
 				<div class="row">
 					<div class="col-md-3">
@@ -26,8 +29,8 @@
 					<li><a href="" data-toggle="tab">Strategy</a></li>
 				</ul>
 				<br>
-				<table class="table table-condensed table-responsive">
-					<thead>
+				<table class="table table-responsive">
+					<thead style="background-color: #1976D2;">
 						<tr>
 							<th>Item</th>
 							<th>Type</th>
@@ -35,8 +38,8 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr ng-repeat="item in items">
-							<td><a href="/#/units/{{item.name}}">{{item.name}}</a></td>
+						<tr ng-repeat="item in items | filter:Unit">
+							<td><a href="/#/units/{{item.name}}" style="color: #FFCA28;">{{item.name}}</a></td>
 							<td>{{item.type}}</td>
 							<td>{{item.info}}</td>
 						</tr>
