@@ -1,9 +1,6 @@
-<div class="container" ng-controller="unitsCtrl" style="background-color: rgba(64, 64, 64, .97); height: 80%;">
+<div class="container" ng-controller="unitsCtrl" style="background-color: rgba(64, 64, 64, .97);">
     <!-- Banner Header -->
     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6295142868455159" data-ad-slot="2915617829"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
     <h4>Units</h4>
     <div class="panel panel-default" style="background: #424242; border-color: #333333">
         <!-- <div class="panel-heading" style="background: #388E3C; color: #fff;">
@@ -13,6 +10,7 @@
             <table class="table table-responsive">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>Name</th>
                         <th>Civ</th>
                         <th>Type</th>
@@ -23,6 +21,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="unit in units">
+                        <td><img class="img-rounded" src=../images/items/{{unit.image}} alt={{unit.name}} width="50" height="50"></td>
                         <td><a href="/#/units/{{unit.name}}">{{unit.name}}</a></td>
                         <td>{{unit.civ_name}}</td>
                         <td>{{unit.type}}</td>

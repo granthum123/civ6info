@@ -40,10 +40,10 @@ a:hover {
    color: #FFCA28; 
 }
 
-th {
+/*th {
     background-color: #388E3C;
     color: white;
-}
+}*/
 
 table th:first-child {
     border-radius: 2px 0 0 2px;

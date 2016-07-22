@@ -1,12 +1,13 @@
 <div class="container" ng-controller="civsCtrl">
 	<!-- Trying to center table/coloring scheme-->
-	<div class="panel panel-primary" style="height: 100%;">
+	<div class="panel panel-primary">
 		<div class="panel-heading"><h4>Civilizations</h4></div>
-		<div class="panel-body">
-			<table class="table table-condensed table-responsive">
-				<thead>
+		<div class="panel-body" style="background: #424242; border-color: #333333">
+			<table class="table table-responsive">
+				<thead style="border: 1px inset black;">
 					<tr>
-						<th>Civilization</th>
+						<th></th>
+						<th>Civ</th>
 						<th>Leader</th>
 						<th>Ability</th>
 						<th>Info</th>
@@ -14,6 +15,7 @@
 				</thead>
 				<tbody>
 					<tr ng-repeat="civ in civlist">
+						<td><a href="/#/civs/{{civ.name}}"><img class="img-rounded" src=../images/civs/{{civ.leader_image}} alt={{civ.leader}} width="75" height="75"></a></td>
 						<td><a href="/#/civs/{{civ.name}}">{{civ.name}}</a></td>
 						<td>{{civ.leader}}</td>
 						<td>{{civ.ability_name}}</td>

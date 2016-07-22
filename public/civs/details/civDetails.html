@@ -10,28 +10,28 @@
 		</div>
 	</div>
 	<div class="col-md-9" id="sidebar" style="background-color: rgba(64, 64, 64, .97); padding: 20px;">
+		<div class="page-header">
+			<h2 style="color: white;">{{civ.name}} <small>{{civ.leader}}</small></h2>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img class="img-rounded" src=../images/civs/{{civ.leader_image}} alt={{civ.leader}} width="150" height="150">
+			</div>
+			<div class="col-md-7">
+				<h4>Ability: {{civ.ability_name}}<br>{{civ.ability_info}}</h4>
+			</div>
+		</div>
+		<br>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="" data-toggle="tab">Unique Items</a></li>
+		</ul>
+		<br>
 		<div class="panel panel-default" style="background: #424242; border-color: #333333">
 			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-3">
-						<img class="img-responsive" src={{civ.leader_image}} alt={{civ.leader}} width="300" height="300">
-					</div>
-					<div class="col-md-6">
-						<h2>{{civ.name}}</h2>
-						<h4>Leader: {{civ.leader}}</h4>
-						<h4>Ability: {{civ.ability_name}}</h4>
-						<p>{{civ.ability_info}}</p>
-					</div>
-				</div>
-				<br>
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="" data-toggle="tab">Unique Items</a></li>
-					<li><a href="" data-toggle="tab">Strategy</a></li>
-				</ul>
-				<br>
 				<table class="table table-responsive">
 					<thead style="background-color: #1976D2;">
 						<tr>
+							<th></th>
 							<th>Item</th>
 							<th>Type</th>
 							<th>Info</th>
@@ -39,6 +39,7 @@
 					</thead>
 					<tbody>
 						<tr ng-repeat="item in items | filter:Unit">
+							<td><img class="img-rounded" src=../images/items/{{item.image}} alt={{item.name}} width="75" height="75"></td>
 							<td><a href="/#/units/{{item.name}}" style="color: #FFCA28;">{{item.name}}</a></td>
 							<td>{{item.type}}</td>
 							<td>{{item.info}}</td>
