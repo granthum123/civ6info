@@ -10,9 +10,9 @@ myApp.config(['$routeProvider', function($routeProvider){
           .when('/civs', {
             templateUrl:'public/civs/civs.html'
           })
-          .when('/strategy',{
+          /*.when('/strategy',{
             templateUrl:'public/strategies/strategy.html'
-          })
+          })*/
           .when('/tiles',{
             templateUrl:'public/tiles.html'
           })
@@ -32,6 +32,9 @@ myApp.config(['$routeProvider', function($routeProvider){
            	templateUrl:'public/buildings/buildings.html'
           })
           .when('/districts', {
+           	templateUrl:'public/coming-soon.html'
+          })
+          .when('/strategy', {
            	templateUrl:'public/coming-soon.html'
           })
           .otherwise({ redirectTo:'/'})

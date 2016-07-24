@@ -1,18 +1,24 @@
-<div class="container" ng-controller="buildingsCtrl">
+<div class="container" ng-controller="buildingsCtrl" style="background-color: rgba(64, 64, 64, .97);">
     <!-- Trying to center table/coloring scheme-->
-    <div class="panel panel-primary">
-        <div class="panel-heading">Buildings</div>
+    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6295142868455159" data-ad-slot="2915617829"></ins>
+    <h4>Buildings</h4>
+    <div class="panel panel-default" style="background: #424242; border-color: #333333">
+        <!-- <div class="panel-heading" style="background: #388E3C; color: #fff;">
+            Units
+        </div> -->
         <div class="panel-body">
-            <table class="table table-condensed table-responsive">
+            <table class="table table-responsive">
                 <thead>
                     <tr>
+                        <!--bldg img empty header placeholder   <th></th>-->
                         <th>Building</th>
                         <th>Info</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="building in buildings">
-                        <td><a href="/#/buildings/{{building.name}}">{{building.name}}</a></td>
+                        <!--bldg img    <td><img class="img-rounded" src=../images/items/{{unit.image}} alt={{unit.name}} width="50" height="50"></td>-->
+                        <td>{{building.name}}</a></td>
                         <td>{{building.info}}</td>
                     </tr>
                 </tbody>
