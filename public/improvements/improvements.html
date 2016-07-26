@@ -1,22 +1,22 @@
-<div class="container" ng-controller="buildingsCtrl">
-    <!-- Trying to center table/coloring scheme-->
+<div class="container" ng-controller="improvementsCtrl">
+    <!-- Banner Header-->
     <!--<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6295142868455159" data-ad-slot="2915617829"></ins>-->
-	<div class="panel panel-primary">
-		<div class="panel-heading"><h4>Buildings</h4></div>
+    <div class="panel panel-primary">
+		<div class="panel-heading"><h4>Units</h4></div>
 		<div class="panel-body" style="background: #424242; border-color: #333333">
             <table class="table table-responsive">
                 <thead style="border: 1px inset black;">
                     <tr>
                         <th></th>
-                        <th>Building</th>
+                        <th>Name</th>
                         <th>Info</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="building in buildings">
-                        <td><img class="img-rounded" src=../images/items/{{building.image}} alt={{building.name}} width="75" height="75"></td>
-                        <td>{{building.name}}</a></td>
-                        <td>{{building.info}}</td>
+                    <tr ng-repeat="improvement in improvements">
+                        <td><img class="img-rounded" src=../images/items/{{improvement.image}} alt={{improvement.name}} width="75" height="75"></td>
+                        <td>{{improvement.name}}</a></td>
+                        <td>{{improvement.info}}</td>
                     </tr>
                 </tbody>
             </table>

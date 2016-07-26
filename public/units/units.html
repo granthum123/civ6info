@@ -1,14 +1,11 @@
-<div class="container" ng-controller="unitsCtrl" style="background-color: rgba(64, 64, 64, .97);">
-    <!-- Banner Header -->
-    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6295142868455159" data-ad-slot="2915617829"></ins>
-    <h4>Units</h4>
-    <div class="panel panel-default" style="background: #424242; border-color: #333333">
-        <!-- <div class="panel-heading" style="background: #388E3C; color: #fff;">
-            Units
-        </div> -->
-        <div class="panel-body">
+<div class="container" ng-controller="unitsCtrl">
+    <!-- Banner Header-->
+    <!--<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6295142868455159" data-ad-slot="2915617829"></ins>-->
+    <div class="panel panel-primary">
+		<div class="panel-heading"><h4>Units</h4></div>
+		<div class="panel-body" style="background: #424242; border-color: #333333">
             <table class="table table-responsive">
-                <thead>
+                <thead style="border: 1px inset black;">
                     <tr>
                         <th></th>
                         <th>Name</th>
@@ -16,13 +13,12 @@
                         <th>Type</th>
                         <th>Attack</th>
                         <th>Info</th>
-
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="unit in units">
-                        <td><img class="img-rounded" src=../images/items/{{unit.image}} alt={{unit.name}} width="50" height="50"></td>
-                        <td><a href="/#/units/{{unit.name}}">{{unit.name}}</a></td>
+                        <td><img class="img-rounded" src=../images/items/{{unit.image}} alt={{unit.name}} width="75" height="75"></td>
+                        <td>{{unit.name}}</a></td>
                         <td>{{unit.civ_name}}</td>
                         <td>{{unit.type}}</td>
                         <td>{{unit.attack}}</td>

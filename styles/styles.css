@@ -65,6 +65,12 @@ tr:nth-child(even) {
 h4 {
     color: white;
 }
+p {
+    color: white;
+}
+li {
+    color: white;
+}
 
 tbody,
 thead {

@@ -1,6 +1,6 @@
 angular.module('appControllers').controller('unitsCtrl', ['$scope', '$http', function($scope, $http) {
 	$scope.showAdBlock = false;
-	(adsbygoogle = window.adsbygoogle || []).push({});
+	//(adsbygoogle = window.adsbygoogle || []).push({});
 	$http.get('https://api-civ6.rhcloud.com/units').success(function(response){
 		console.log("I got the data I requested");
 		console.log(response);

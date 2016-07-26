@@ -40,7 +40,8 @@
 					<tbody>
 						<tr ng-repeat="item in items | filter:Unit">
 							<td><img class="img-rounded" src=../images/items/{{item.image}} alt={{item.name}} width="75" height="75"></td>
-							<td><a href="/#/units/{{item.name}}" style="color: #FFCA28;">{{item.name}}</a></td>
+							<!-- removing link for now <td><a href="/#/units/{{item.name}}" style="color: #FFCA28;">{{item.name}}</a></td>-->
+							<td>{{item.name}}</td>
 							<td>{{item.type}}</td>
 							<td>{{item.info}}</td>
 						</tr>

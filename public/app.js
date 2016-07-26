@@ -32,7 +32,10 @@ myApp.config(['$routeProvider', function($routeProvider){
            	templateUrl:'public/buildings/buildings.html'
           })
           .when('/districts', {
-           	templateUrl:'public/coming-soon.html'
+           	templateUrl:'public/districts/districts.html'
+          })
+          .when('/improvements', {
+           	templateUrl:'public/improvements/improvements.html'
           })
           .when('/strategy', {
            	templateUrl:'public/coming-soon.html'
