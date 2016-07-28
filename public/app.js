@@ -10,35 +10,17 @@ myApp.config(['$routeProvider', function($routeProvider){
           .when('/civs', {
             templateUrl:'public/civs/civs.html'
           })
-          /*.when('/strategy',{
-            templateUrl:'public/strategies/strategy.html'
-          })*/
-          .when('/tiles',{
-            templateUrl:'public/tiles.html'
-          })
 		      .when('/civs/:name', {
            	templateUrl:'public/civs/details/civDetails.html'
           })
           .when('/news', {
             templateUrl:'public/news.html'
           })
-          .when('/units', {
-            templateUrl:'public/units/units.html'
-          })
-          .when('/units/:name', {
-           	templateUrl:'public/units/unitDetails.html'
-          })
-          .when('/buildings', {
-           	templateUrl:'public/buildings/buildings.html'
-          })
-          .when('/districts', {
-           	templateUrl:'public/districts/districts.html'
-          })
-          .when('/improvements', {
-           	templateUrl:'public/improvements/improvements.html'
-          })
           .when('/strategy', {
            	templateUrl:'public/coming-soon.html'
+          })
+          .when('/:category', {
+           	templateUrl:'public/items/items.html'
           })
           .otherwise({ redirectTo:'/'})
 }]);
