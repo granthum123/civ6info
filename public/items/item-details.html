@@ -1,0 +1,53 @@
+<div class="container-fluid" ng-controller="civDetailsCtrl">
+	<div class="col-md-3" id="sidebar">
+		<div class="panel panel-primary" style="background-color: #1976D2; border-color: #333333;">
+			<div class="panel-header" style="">
+				<h4 style="padding-left: 10px">Civilizations</h4>
+			</div>
+			<div class="panel-body" style="background: #424242;">
+				<div ng-include="'/public/civs/civsList.html'"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-9" id="sidebar" style="background-color: rgba(64, 64, 64, .97); padding: 20px;">
+		<div class="page-header">
+			<h2 style="color: white;">{{civ.name}} <small>{{civ.leader}}</small></h2>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img class="img-rounded" src=../images/civs/{{civ.image}} alt={{civ.leader}} width="150" height="150">
+			</div>
+			<div class="col-md-7">
+				<h4>Ability: {{civ.ability_name}}<br>{{civ.ability_info}}</h4>
+			</div>
+		</div>
+		<br>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="" data-toggle="tab">Unique Items</a></li>
+		</ul>
+		<br>
+		<div class="panel panel-default" style="background: #424242; border-color: #333333">
+			<div class="panel-body">
+				<table class="table table-responsive">
+					<thead style="background-color: #1976D2;">
+						<tr>
+							<th></th>
+							<th>Item</th>
+							<th>Type</th>
+							<th>Info</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in items | filter:Unit">
+							<td><img class="img-rounded" src=../images/items/{{item.image}} alt={{item.name}} width="75" height="75"></td>
+							<!-- removing link for now <td><a href="/#/units/{{item.name}}" style="color: #FFCA28;">{{item.name}}</a></td>-->
+							<td>{{item.name}}</td>
+							<td>{{item.type}}</td>
+							<td>{{item.info}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
