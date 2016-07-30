@@ -7,9 +7,6 @@ myApp.config(['$routeProvider', function($routeProvider){
           .when('/', {
             templateUrl:'public/home.html'
           })
-          .when('/civs', {
-            templateUrl:'public/civs/civs.html'
-          })
 		      .when('/civs/:name', {
            	templateUrl:'public/civs/details/civDetails.html'
           })

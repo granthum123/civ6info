@@ -1,5 +1,6 @@
 body {
-    background-image: url("../images/civ-large.jpg");
+    /*background-image: url("../images/civ-large.jpg");*/
+    background-color: #E9EAED
 }
 
 #container:hover {
@@ -45,15 +46,7 @@ a:hover {
     color: white;
 }*/
 
-table th:first-child {
-    border-radius: 2px 0 0 2px;
-}
-
-table th:last-child {
-    border-radius: 0 2px 2px 0;
-}
-
-td,
+/*td,
 th {
     border: none !important;
 }
@@ -75,4 +68,4 @@ li {
 tbody,
 thead {
     color: white;
-}
+}*/

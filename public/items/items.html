@@ -1,11 +1,12 @@
 <div class="container" ng-controller="itemsCtrl">
     <!-- Banner Header-->
     <!--<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6295142868455159" data-ad-slot="2915617829"></ins>-->
-    <div class="panel panel-primary">
-		<div class="panel-heading"><h4>{{category}}</h4></div>
-		<div class="panel-body" style="background: #424242; border-color: #333333">
+    <!--<div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4>{{category}}</h4></div>
+        <div class="panel-body" style="background: #424242; border-color: #333333">
             <table class="table table-responsive">
-                <thead style="border: 1px inset black;">
+                <thead style="">
                     <tr>
                         <th></th>
                         <th>Name</th>
@@ -15,11 +16,32 @@
                 <tbody>
                     <tr ng-repeat="item in items">
                         <td><img class="img-rounded" src=../images/items/{{item.image}} alt={{item.name}} width="75" height="75"></td>
-                        <td>{{item.name}}</a></td>
+                        <td>{{item.name}}</a>
+                        </td>
                         <td>{{item.info}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+    </div>-->
+    <div class="mdl-card mdl-shadow--2dp" style="width:100%;">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">{{category}}</h2>
+        </div>
+        <table class="mdl-data-table mdl-js-data-table" style="width:100%;">
+            <!--<thead>
+                <tr>
+                    <th></th>
+                    <th class="mdl-data-table__cell--non-numeric">Name</th>
+                    <th class="mdl-data-table__cell--non-numeric">Info</th>
+                </tr>
+            </thead>-->
+            <tbody>
+                <tr ng-repeat="item in items" ng-click="setSelected();">
+                    <td><img class="img-rounded" src=../images/{{image_folder}}/{{item.image}} alt={{item.name}} width="75" height="75"></td>
+                    <td class="mdl-data-table__cell--non-numeric" ng-repeat="column in item.columns">{{column}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

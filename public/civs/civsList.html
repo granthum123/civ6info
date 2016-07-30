@@ -1,9 +1,10 @@
 <div class="container-fluid" ng-controller="civsCtrl">
-    <table class="table table-responsive">
+    <table class="mdl-data-table mdl-js-data-table" style="width:100%;">
         <tbody>
-            <tr ng-repeat="civ in civlist">
-                <td><a href="/#/civs/{{civ.name}}" style="color: #FFCA28;">{{civ.name}}</a></td>
-                <td>{{civ.leader}}</td>
+            <tr ng-repeat="civ in civlist" ng-click="setSelected();">
+                <td><img class="img-rounded" src=../images/civs/{{civ.image}} alt={{civ.name}} width="50" height="50"></td>
+                <td class="mdl-data-table__cell--non-numeric">{{civ.name}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{civ.leader}}</td>
             </tr>
         </tbody>
     </table>
