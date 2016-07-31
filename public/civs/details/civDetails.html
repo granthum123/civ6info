@@ -4,14 +4,15 @@
 			<div ng-include="'/public/civs/civsList.html'"></div>
 		</div>
 		<div class="mdl-cell mdl-cell--8-col">
-			<div class="mdl-card" style="width: 100%;">
+			<div class="mdl-card mdl-shadow--4dp" style="width: 100%;">
 				<div class="mdl-card__title">
+					<div></div>
+					<img class="img-rounded" src=../images/civs/{{civ.image}} alt={{civ.leader}} width="100" height="100" style="float: left; clear: none; margin-right: 20;">
 					<h5>
     					<div class="mdl-card__title-text">{{civ.name}}</div>
     					<div class="mdl-card__subtitle-text">{{civ.leader}}</div>
   					</h5>
 				</div>
-					<img class="img-rounded" src=../images/civs/{{civ.image}} alt={{civ.leader}} width="150" height="150">
 				<div class="mdl-card__supporting-text">
 					Ability: {{civ.ability_name}} - {{civ.ability_info}}
 				</div>

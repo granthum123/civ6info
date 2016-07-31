@@ -7,9 +7,6 @@ myApp.config(['$routeProvider', function($routeProvider){
           .when('/', {
             templateUrl:'public/home.html'
           })
-		      .when('/civs/:name', {
-           	templateUrl:'public/civs/details/civDetails.html'
-          })
           .when('/news', {
             templateUrl:'public/news.html'
           })
@@ -17,7 +14,10 @@ myApp.config(['$routeProvider', function($routeProvider){
            	templateUrl:'public/coming-soon.html'
           })
           .when('/:category', {
-           	templateUrl:'public/items/items.html'
+           	templateUrl:'public/items/item-details.html'
+          })
+          .when('/:category/:name', {
+           	templateUrl:'public/items/item-details.html'
           })
           .otherwise({ redirectTo:'/'})
 }]);

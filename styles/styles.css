@@ -1,6 +1,8 @@
 body {
-    /*background-image: url("../images/civ-large.jpg");*/
-    background-color: #E9EAED
+    background-image: url("../images/background.png");
+    background-size: 100% 100%;
+    background-color: #E9EAED;
+    background-repeat: no-repeat;
 }
 
 #container:hover {
