@@ -27,10 +27,16 @@ angular.module('appControllers').controller('itemsCtrl', ['$scope', '$http', '$r
 		}
 		$scope.showLoading = true;
 		if (typeof $routeParams.name != 'undefined') {
+			for (var i = 0; i < $scope.items.length; i++) {
+				if ($routeParams.name === $scope.items[i].name) {
+					$scope.items[i].extraStyle = "background: #EEEEEE;"
+				}
+			}
 			$scope.selectedItem = $routeParams.name;
 		}
 		else {
 			$scope.selectedItem = $scope.items[0].name;
+			$scope.items[0].extraStyle = "background: #EEEEEE;"
 		}
 		$http.get('https://api-civ6.rhcloud.com/' + $routeParams.category + '/' + $scope.selectedItem).success(function(response) {
 			console.log(response);
