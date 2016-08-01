@@ -1,46 +1,8 @@
 body {
-    background-image: url("../images/background.png");
+    background-image: url("../images/background.jpg");
     background-size: 100% 100%;
     background-color: #E9EAED;
     background-repeat: no-repeat;
-}
-
-#container:hover {
-    cursor: default;
-}
-
-#navbar-element {
-    color: #F3FAB6;
-}
-
-#brand {
-    color: #F3FAB6;
-}
-
-div .well {
-    border: 5px inset #191919;
-}
-
-.navbar-nav li {
-    display: inline-block;
-    transition: background .25s ease-in-out;
-    -moz-transition: background .25s ease-in-out;
-    -webkit-transition: background .25s ease-in-out;
-}
-
-.navbar-nav li:hover {
-    background-color: rgba(64, 64, 64, .5);
-}
-
-a {
-    color: #FFCA28;
-}
-
-a:hover {
-    color: #FFCA28;
-}
-#yellowlink {
-   color: #FFCA28; 
 }
 
 /*th {
