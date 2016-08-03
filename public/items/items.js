@@ -1,5 +1,6 @@
 angular.module('appControllers').controller('itemsCtrl', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location) {
 	$scope.showLoading = true;
+	$scope.isCiv = false;
 	$http.get('https://api-civ6.rhcloud.com/' + $routeParams.category).success(function(response) {
 		$scope.category = $routeParams.category.charAt(0).toUpperCase() + $routeParams.category.slice(1);
 		console.log("I got the data I requested");
@@ -7,6 +8,7 @@ angular.module('appControllers').controller('itemsCtrl', ['$scope', '$http', '$r
 		if ($routeParams.category === "civs") {
 			$scope.image_folder = "civs";
 			$scope.style = "cursor: pointer;";
+			$scope.isCiv = true;
 		}
 		else {
 			$scope.image_folder = "items";

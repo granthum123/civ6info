@@ -1,4 +1,5 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<html class=''>
 <html ng-app="myApp">
 
 <head>
@@ -12,20 +13,18 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<!-- Material Design -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-indigo.min.css" />
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-light_blue.min.css" />
 	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-	<!-- Custom JQuery 
-	<script src="styles/styles.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
 	<script src="libs/angular/angular.min.js"></script>
 	<script src="libs/angular-route/angular-route.js"></script>
 	<script src="public/app.js"></script>
 	<script src="public/home.js"></script>
-	<script src="public/civs/civs.js"></script>
-	<script src="public/civs/details/civDetails.js"></script>
 	<script src="public/items/items.js"></script>
 	<script src="public/strategies/strategies.js"></script>
 
@@ -44,7 +43,7 @@
 			r.parentNode.insertBefore(s, r);
 		}(document, 'script'));
 	</script>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Civilization 6 Information</title>
 </head>
 
@@ -62,9 +61,8 @@
 			color: white;
 		}
 	</style>
-
-	<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-		<header class="mdl-layout__header mdl-layout__header--transparent">
+	<div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button mdl-layout--fixed-header">
+		<header class="mdl-layout__header" style="background: #212121;">
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
 				<span class="mdl-layout-title">
@@ -72,30 +70,29 @@
 						<img src="../images/civ6info-logo.png" class="img-responsive" alt="Cinque Terre" style="height: 40px;">
 					</a>
 				</span>
-				<!-- Add spacer, to align navigation to the right -->
 				<div class="mdl-layout-spacer"></div>
-				<!-- Navigation -->
-				<nav class="mdl-navigation">
+				<div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
 					<a class="mdl-navigation__link" href="#/">Home</a>
 					<a class="mdl-navigation__link" href="#/civs">Civs</a>
 					<a class="mdl-navigation__link" href="#/units">Units</a>
 					<a class="mdl-navigation__link" href="#/buildings">Buildings</a>
 					<a class="mdl-navigation__link" href="#/districts">Districts</a>
 					<a class="mdl-navigation__link" href="#/improvements">Improvements</a>
-					<!--<div class="mdl-spinner mdl-js-spinner is-active"></div>-->
-
 				</nav>
 			</div>
 		</header>
-		<!--<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title">Title</span>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Categories</span>
 			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="#/">Home</a>
 				<a class="mdl-navigation__link" href="#/civs">Civs</a>
 				<a class="mdl-navigation__link" href="#/units">Units</a>
 				<a class="mdl-navigation__link" href="#/buildings">Buildings</a>
-				<a class="mdl-navigation__link" href="#/">More</a>
+				<a class="mdl-navigation__link" href="#/districts">Districts</a>
+				<a class="mdl-navigation__link" href="#/improvements">Improvements</a>
 			</nav>
-		</div>-->
+		</div>
 		<main class="mdl-layout__content">
 			<ng-view></ng-view>
 		</main>

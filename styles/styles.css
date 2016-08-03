@@ -1,35 +1,10 @@
 body {
-    background-image: url("../images/background.jpg");
-    background-size: 100% 100%;
-    background-color: #E9EAED;
-    background-repeat: no-repeat;
+    /*background-image: url("../images/background.jpg");
+    background-size: 100% 100%;*/
+    background-color: #EEEEEE;
+    /*background-repeat: no-repeat;*/
 }
-
-/*th {
-    background-color: #388E3C;
-    color: white;
-}*/
-
-/*td,
-th {
-    border: none !important;
+#dark-header {
+    background: #212121; 
+    color: #F5F5F5;
 }
-
-tr:nth-child(even) {
-    background-color: #4d4d4d
-}
-
-h4 {
-    color: white;
-}
-p {
-    color: white;
-}
-li {
-    color: white;
-}
-
-tbody,
-thead {
-    color: white;
-}*/
