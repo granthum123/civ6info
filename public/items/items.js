@@ -55,7 +55,7 @@ angular.module('appControllers').controller('itemsCtrl', ['$scope', '$http', '$r
 	$scope.setSelected = function() {
 		$scope.selected = this.item;
 		console.log($scope.selected);
-		$location.path($routeParams.category + "/" + $scope.selected.name)
+		$location.path("civilopedia/" + $routeParams.category + "/" + $scope.selected.name)
 	};
 
 }]);

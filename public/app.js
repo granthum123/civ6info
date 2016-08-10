@@ -1,5 +1,5 @@
 angular.module('appControllers', []);
-var myApp = angular.module('myApp', ['ngRoute', 'appControllers']);
+var myApp = angular.module('myApp', ['ngRoute', 'ui.bootstrap', 'appControllers']);
 
 //Setting Domain to get around CORS
 myApp.config(['$routeProvider', function($routeProvider){
@@ -13,11 +13,14 @@ myApp.config(['$routeProvider', function($routeProvider){
           .when('/strategy', {
            	templateUrl:'public/coming-soon.html'
           })
-          .when('/:category', {
+          .when('/civilopedia/:category', {
            	templateUrl:'public/items/item-details.html'
           })
-          .when('/:category/:name', {
+          .when('/civilopedia/:category/:name', {
            	templateUrl:'public/items/item-details.html'
+          })
+          .when('/civilopedia', {
+            redirectTo:'/civilopedia/civs'
           })
           .otherwise({ redirectTo:'/'})
 }]);

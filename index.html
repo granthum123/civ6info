@@ -16,13 +16,12 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-light_blue.min.css" />
 	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-	<script src="libs/angular/angular.min.js"></script>
-	<script src="libs/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 	<script src="public/app.js"></script>
 	<script src="public/home.js"></script>
 	<script src="public/items/items.js"></script>
@@ -60,8 +59,11 @@
 			r.parentNode.insertBefore(s, r);
 		}(document, 'script'));
 	</script>
+	<!-- META TAGS START-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Civilization 6 Information</title>
+	<meta name=”description” content="Database and Civiliopedia for Civilization VI. Browse new Civs, Units, Buildings, Wonders, Improvements, and much more.">
+	<meta name="robots" content="index">
 </head>
 
 <body>
@@ -90,68 +92,39 @@
 				<div class="mdl-layout-spacer"></div>
 				<div class="mdl-layout-spacer"></div>
 				<nav class="mdl-navigation mdl-layout--large-screen-only">
-					<a class="mdl-navigation__link" href="#/">Home</a>
-					<a class="mdl-navigation__link" href="#/civs">Civs</a>
-					<a class="mdl-navigation__link" href="#/units">Units</a>
-					<a class="mdl-navigation__link" href="#/buildings">Buildings</a>
-					<a class="mdl-navigation__link" href="#/districts">Districts</a>
-					<a class="mdl-navigation__link" href="#/improvements">Improvements</a>
+					<ul class="nav navbar-nav navbar-right">
+						<nav class="mdl-navigation">
+							<a class="mdl-navigation__link" href="#/">Home</a>
+							<a class="mdl-navigation__link" href="#/civilopedia/civs">Civs</a>
+							<a class="mdl-navigation__link" href="#/civilopedia/units">Units</a>
+							<a class="mdl-navigation__link" href="#/civilopedia/buildings">Buildings</a>
+							<a class="mdl-navigation__link" href="#/civilopedia/districts">Districts</a>
+							<a class="mdl-navigation__link" href="#/civilopedia/improvements">Improvements</a>
+						</nav>
+					</ul>
 				</nav>
 			</div>
 		</header>
 		<div class="mdl-layout__drawer">
 			<span class="mdl-layout-title">Categories</span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="#/">Home</a>
-				<a class="mdl-navigation__link" href="#/civs">Civs</a>
-				<a class="mdl-navigation__link" href="#/units">Units</a>
-				<a class="mdl-navigation__link" href="#/buildings">Buildings</a>
-				<a class="mdl-navigation__link" href="#/districts">Districts</a>
-				<a class="mdl-navigation__link" href="#/improvements">Improvements</a>
+				<a class="mdl-navigation__link" href="#/civilopedia/">Home</a>
+				<a class="mdl-navigation__link" href="#/civilopedia/civs">Civs</a>
+				<a class="mdl-navigation__link" href="#/civilopedia/units">Units</a>
+				<a class="mdl-navigation__link" href="#/civilopedia/buildings">Buildings</a>
+				<a class="mdl-navigation__link" href="#/civilopedia/districts">Districts</a>
+				<a class="mdl-navigation__link" href="#/civilopedia/improvements">Improvements</a>
 			</nav>
 		</div>
 		<main class="mdl-layout__content">
 			<ng-view></ng-view>
 		</main>
 	</div>
-	<!--Navbar-->
-	<!--<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href="/#/" class="navbar-brand">CIV6INFO by bitlads</a>
-			</div>
-			<div>
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="#/news"><span class = "glyphicon glyphicon-time"></span>     What's New</a>
-					</li>
-					<li>
-						<a href="#/civs"><span class="glyphicon glyphicon-globe"></span>     Civilizations</a>
-					</li>
-					<li>
-						<a href="#/units"><span class="glyphicon glyphicon-knight"></span>     Units</a>
-					</li>
-					<li>
-						<a href="#/buildings"><span class="glyphicon glyphicon-tower"></span>     Buildings</a>
-					</li>
-					<li>
-						<a href="#/districts"><span class="glyphicon glyphicon-tree-conifer"></span>     Districts</a>
-					</li>
-					<li>
-						<a href="#/improvements"><span class="glyphicon glyphicon-tent"></span>     Improvements</a>
-					</li>
-					<li>
-						<a href="#/strategy"><span class="glyphicon glyphicon-screenshot"></span>     Strategy</a>
-					</li>
-				</ul>
-				removing search for now<form class="navbar-form pull-right">
-					<input type="text" class="form-control" placeholder="Search This Site" />
-					<button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-search"></span></button>
-				</form>
-			</div>
-		</div>
-	</nav>-->
-	<!-- END NAVBAR -->
+	<script type="text/javascript">
+		var infolinks_pid = 2837456;
+		var infolinks_wsid = 0;
+	</script>
+	<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 </body>
 
 </html>
